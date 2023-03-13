@@ -27,6 +27,20 @@ body {
   gap: 2em;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app form {
   text-align: center;
   font-size: large;

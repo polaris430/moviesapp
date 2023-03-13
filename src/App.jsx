@@ -64,6 +64,9 @@ const App = () => {
           <Movie key={item.imdbID} item={item} />
         ))}
       </div>
+      <footer className="footer">
+        <p>Copyright &copy; polaris430</p>
+      </footer>
     </div>
   );
 };
