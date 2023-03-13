@@ -7,13 +7,14 @@ const App = () => {
   const [value, setValue] = useState("");
   const [data, setData] = useState({});
   const [moviename, setMovieName] = useState(null);
+  const apikey = import.meta.env.VITE_API_KEY;
 
   const options1 = {
     method: "GET",
     url: "https://movie-database-alternative.p.rapidapi.com/",
     params: { s: moviename, r: "json", page: "1", type: "movie" },
     headers: {
-      "X-RapidAPI-Key": API_KEY,
+      "X-RapidAPI-Key": apikey,
       "X-RapidAPI-Host": "movie-database-alternative.p.rapidapi.com",
     },
   };

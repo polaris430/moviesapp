@@ -6,6 +6,7 @@ import "../styles/movie.css";
 const Movie = ({ item }) => {
   const [showratings, setShowRatings] = useState(false);
   const [ratings, setRatings] = useState("");
+  const apikey = import.meta.env.VITE_API_KEY;
   const fetchdetails = () => {
     const imdbid = item.imdbID;
     //make api call to fetch imdb ratings, imdbid is saved into item.imdbid
@@ -14,7 +15,7 @@ const Movie = ({ item }) => {
       url: "https://movie-database-alternative.p.rapidapi.com/",
       params: { r: "json", i: imdbid },
       headers: {
-        "X-RapidAPI-Key": API_KEY,
+        "X-RapidAPI-Key": apikey,
         "X-RapidAPI-Host": "movie-database-alternative.p.rapidapi.com",
       },
     };
