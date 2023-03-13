@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.moviecard img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: lighter;
+  padding: 1em;
+  text-align: center;
+}
+
+.moviecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
