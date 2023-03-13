@@ -15,6 +15,7 @@ body {
   background-color: #12203d;
   color: #eaeaea;
   margin-top: 1em;
+  height: 100%;
 }
 
 .movielist {
@@ -25,20 +26,6 @@ body {
   margin-top: 20px;
   height: 100%;
   gap: 2em;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .app form {
@@ -61,10 +48,17 @@ body {
   background-color: #eaeaea;
   color: #3c4048;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .form {
   margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .app form {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -7,7 +7,6 @@ const App = () => {
   const [value, setValue] = useState("");
   const [data, setData] = useState({});
   const [moviename, setMovieName] = useState(null);
-  const [imdbid, setImdbid] = useState("");
 
   const options1 = {
     method: "GET",

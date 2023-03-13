@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
+.moviebox {
+  display: flex;
+}
 .moviecard img {
   height: 250px;
   width: 250px;
@@ -20,9 +24,34 @@
 .moviecard {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  height: 400px;
+  height: 500px;
   width: 400px;
   border-radius: 10px;
+}
+
+.ratingbtn {
+  width: 100px;
+}
+
+.show {
+  display: flex;
+  padding: 1em;
+}
+
+.noshow {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(205, 58, 58);
+  color: white;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
