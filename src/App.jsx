@@ -13,7 +13,7 @@ const App = () => {
     url: "https://movie-database-alternative.p.rapidapi.com/",
     params: { s: moviename, r: "json", page: "1", type: "movie" },
     headers: {
-      "X-RapidAPI-Key": { API_KEY },
+      "X-RapidAPI-Key": API_KEY,
       "X-RapidAPI-Host": "movie-database-alternative.p.rapidapi.com",
     },
   };

@@ -14,7 +14,7 @@ const Movie = ({ item }) => {
       url: "https://movie-database-alternative.p.rapidapi.com/",
       params: { r: "json", i: imdbid },
       headers: {
-        "X-RapidAPI-Key": { API_KEY },
+        "X-RapidAPI-Key": API_KEY,
         "X-RapidAPI-Host": "movie-database-alternative.p.rapidapi.com",
       },
     };
